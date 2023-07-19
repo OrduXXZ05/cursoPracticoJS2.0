@@ -32,6 +32,16 @@ function areaCirculo(radio) {
     return (Math.pow(radio, 2) * PI);
 }
 
+function validarIsosceles(lado1, lado2, base) {
+    if(lado1 === lado2 && lado1 != base && lado2 != base) {
+        alert("Si es un triangulo isosceles")
+        return true
+    } else {
+        alert("Recuerda que un triangulo isosceles tiene 2 lados iguales y la base es diferente ")
+        return false
+    }
+}
+
 //Aqui interactuamos con HTML
 
 function calcularPerimetroCuadrado() {
@@ -49,4 +59,14 @@ function calcularAreaCuadrado() {
 
     const area = areaCuadrado(value);
     alert(area);
+}
+
+function alturaIsosceles(lado1, lado2, base) {
+    if(validarIsosceles(lado1, lado2, base) == true) {
+        const altura = Math.sqrt((Math.pow(lado1, 2)) - (Math.pow(base, 2) / 4)).toFixed(2);
+        alert("La altura de tu triangulo isosceles es " + altura);
+        return altura;
+    } else {
+        alert("Esto no es un triangulo isosceles");
+    }
 }
