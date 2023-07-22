@@ -9,3 +9,11 @@
 en javascript
 - Tercer paso: crear funciones
 - Cuarto paso: integrar javascript con html
+
+## Taller #2: Porcentajes y Descuentos
+
+- Primer paso: definir las formulas
+- Segundo paso: implementar las formulas
+en javascript
+- Tercer paso: crear funciones
+- Cuarto paso: integrar JS con HTML
