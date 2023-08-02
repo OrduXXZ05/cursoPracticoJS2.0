@@ -1,11 +1,28 @@
 const lista1 = [
-    100,
     200,
+    100,
+    500,
     300,
     400,
-    500,
     6000000,
 ]
+
+const mitadLista1 = parseInt(lista1.length / 2);
+
+let mediana;
+
+const lista1Ordenada = ordenarLista(lista1);
+
+function ordenarLista(lista) {
+
+    function compararNumeros(a,b) {
+        return a - b
+    }
+
+    const orden = lista.sort(compararNumeros);
+    return orden;
+
+}
 
 function calcularMediaAritmnetica(lista) {    
     const sumaLista = lista.reduce(
@@ -17,7 +34,7 @@ function calcularMediaAritmnetica(lista) {
     return promedioLista;
 }
 
-const mitadLista1 = parseInt(lista1.length / 2);
+
 
 function esPar(numero) {
     if(numero % 2 === 0) {
@@ -26,8 +43,6 @@ function esPar(numero) {
         return false;
     }
 }
-
-let mediana;
 
 if(esPar(lista1.length)) {
     const elemento1 = lista1[mitadLista1 - 1]; 
