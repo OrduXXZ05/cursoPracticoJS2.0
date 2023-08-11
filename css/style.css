@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(45, 160, 226);
+    width: 100%;
+    height: 20%;
+    justify-content: flex-start;
+}
+
+.header .titleContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleContainer {
+    width: inherit;
+}
+
+.header h2 {
+    margin: 1rem;
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.header h3 {
+    margin: 1rem;
+    padding-top: 0.2rem;
+    display: flex;
+    font-size: 2rem;
+}
+
+.logo {
+    display: flex;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.mainSinapsis {
+    width: 40%;
+    margin: 5% 5%;
+    height: 80%;
+
+}
+
+.mainSinapsis h1 {
+    margin: 3rem;
+    font-size: 7rem;
+}
+
+.mainSinapsis p {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.linksTalleres {
+    width: 40%;
+    margin: 3% 5%;
+}
+
+.linksTalleres ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linksTalleres ul li {
+    font-size: 2rem;
+    margin: 1.5rem;
+    list-style: none;
+    border: solid 0.5rem rgb(45, 160, 226);
+    border-radius: 10rem;
+}
+
+.linksTalleres ul li:hover {
+    background-color: rgb(45, 160, 226);
+}
+
+.linksTalleres a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.linksTalleres a:hover {
+    color: white;
+}
+
+
+.linksTalleres p {
+    padding: 1rem;
+}
