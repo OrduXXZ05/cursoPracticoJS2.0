@@ -55,7 +55,7 @@ html {
     margin: 0.5rem;
 }
 
-.mainContent {
+.mainContainer {
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -63,9 +63,8 @@ html {
 
 .mainSinapsis {
     width: 40%;
-    margin: 5%;
     height: 80%;
-
+    margin: 5%;
 }
 
 .mainSinapsis h1 {
@@ -78,41 +77,78 @@ html {
     font-size: 2rem;
 }
 
-.linksTalleres {
+.workArea {
     width: 40%;
+    height: 80%;
     margin: 3% 5%;
 }
 
-.linksTalleres ul {
+.calculadoraFiguras {
+    width: 90%;
+    margin: 2.5%;
+    border: solid 0.3rem rgb(31, 35, 37);
+    border-radius: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.linksTalleres ul li {
+.calculadoraFiguras h2 {
+    margin: 2rem auto;
     font-size: 2rem;
-    margin: 1.5rem;
-    background-color: rgb(31, 35, 37);
-    list-style: none;
-    border: solid 0.5rem rgb(31, 35, 37);
-    border-radius: 10rem;
 }
 
-.linksTalleres ul li:hover {
-    background-color: rgb(243, 239, 5);
+.formCalculadora {
+    display: flex;
+    flex-direction: column;
 }
 
-.linksTalleres a {
-    text-decoration: none;
-    color: rgb(243, 239, 5);
+.labelCalculadora {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
+
+#inputCuadrado {
+    margin: 1rem 5rem;
+    height: 3rem;
     text-align: center;
+    border: solid 0.2rem rgb(31, 35, 37);
+    border-radius: 3rem;
 }
 
-.linksTalleres a:hover {
+.boton1 {
+    margin: 1rem auto;
+    height: 4rem;
+    width: 20rem;
+    border: solid 0.2rem rgb(31, 35, 37);
+    border-radius: 3rem;
+    background-color: rgb(31, 35, 37);
+    color: rgb(243, 239, 5);
+}
+
+.boton1:hover {
+    cursor: pointer;
+    background-color: rgb(243, 239, 5);
     color: rgb(31, 35, 37);
 }
 
+.boton2 {
+    margin: 1rem auto 2rem auto;
+    height: 4rem;
+    width: 20rem;
+    border: solid 0.2rem rgb(31, 35, 37);
+    border-radius: 3rem;
+    background-color: rgb(31, 35, 37);
+    color: rgb(243, 239, 5);
+}
 
-.linksTalleres p {
-    padding: 1rem;
+.boton2:hover {
+    cursor: pointer;
+    background-color: rgb(243, 239, 5);
+    color: rgb(31, 35, 37);
+}
+
+#respuestaCuadrado {
+    margin: 0 auto;
+    height: 3rem;
+    font-size: 1.5rem;
 }

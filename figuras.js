@@ -49,7 +49,9 @@ function calcularPerimetroCuadrado() {
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const respuesta = document.getElementById("respuestaCuadrado");
+
+    return respuesta.innerText = "El perimetro del cuadrado es " + perimetro;
 }
 
 
@@ -58,7 +60,9 @@ function calcularAreaCuadrado() {
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+    const respuesta = document.getElementById("respuestaCuadrado");
+
+    return respuesta.innerText = "El area del cuadrado es " + area;
 }
 
 function alturaIsosceles(lado1, lado2, base) {

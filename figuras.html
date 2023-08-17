@@ -4,33 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./figuras.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/figuras.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>
-            Figuras Geometricas
-        </h1>
-        <p>
-            Este es el primer taller del curso practico se JavaScript
-        </p>
-    </header>
-    <section>
-        <h2>
-            Calcular el area y perimetro de un cuadrado
-        </h2>
-        <form action="">
-            <label for="inputCuadrado">
-                Escribe cuanto mide cada lado de tu cuadrado
-            </label>
-            <input id="inputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular perimetro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular area
-            </button>
-        </form>
-    </section>
+        <header class="header">
+            <picture class="logo">
+                <a href="./index.html">
+                <img src="https://ui-geeks.in/images/js-icon_100_100.png" alt="" class="logoImage">
+                </a>
+            </picture>
+            <section class="titleContainer">
+                <h2>
+                    <a href="./index.html">
+                    Taller figuras geometricas
+                    </a>
+                </h2>
+                <h3>
+                    <a href="https://github.com/OrduXXZ05">
+                    Felipe Orduz
+                    </a>
+                </h3>
+            </section>
+        </header>
+        <main>
+            <section class="mainContainer">
+                <article class="mainSinapsis">
+                    <h1>
+                    Figuras Geometricas
+                    </h1>
+                    <p>
+                    Este es el primer taller del curso practico de JavaScript
+                    </p>
+            </article>
+            <article class="workArea">
+                <article class="calculadoraFiguras">
+                    <h2>
+                        Calcular el area y perimetro de un cuadrado
+                    </h2>
+                    <form class="formCalculadora" action="">
+                        <label for="inputCuadrado" class="labelCalculadora">
+                            Escribe cuanto mide cada lado de tu cuadrado
+                        </label>
+                        <input id="inputCuadrado" type="number">
+
+                            <p id="respuestaCuadrado"></p>
+
+                        <button type="button" class="boton1" onclick="calcularPerimetroCuadrado()">
+                            Calcular perimetro
+                        </button>
+                        <button type="button" class="boton2" onclick="calcularAreaCuadrado()">
+                            Calcular area
+                        </button>
+                        </form>
+                </article>
+                </article>
+            </section>
+    </main>
 </body>
 </html>
